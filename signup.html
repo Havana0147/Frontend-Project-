@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      Sign Up | Havana Autos
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer>
+    </script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <a class="header-logo" href="index.html" aria-label="Havana Autos home">
+          <img src="image/project_logo-removebg-preview.png" alt="Havana Autos logo">
+          <div class="header-text">
+            <h2>
+              Havana
+              <span>
+                Autos
+              </span>
+            </h2>
+            <h4>
+              Luxury &amp; Performance
+            </h4>
+          </div>
+        </a>
+        <nav class="header-links">
+          <a href="index.html#Home">
+            Home
+          </a>
+          <a href="index.html#Inventory">
+            Inventory
+          </a>
+          <a href="index.html#Services">
+            Services
+          </a>
+          <a href="index.html#Contact">
+            Contact
+          </a>
+        </nav>
+        <div class="login">
+          <a href="signup.html">
+            Sign up
+          </a>
+          <a href="signin.html">
+            Sign in
+          </a>
+        </div>
+        <button class="hamburger" type="button" aria-label="Toggle navigation">
+          <svg viewBox="0 0 32 32">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 8h22M5 16h22M5 24h22"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main class="form-page">
+      <section class="section">
+        <div class="section-header">
+          <span class="eyebrow">
+            Create your account
+          </span>
+          <h2>
+            Join our community for offers and services
+          </h2>
+          <p>
+            Save your favorite vehicles, track special pricing, and receive tailored service reminders.
+          </p>
+        </div>
+        <form id="signupForm" class="form-card">
+          <label for="fullName">
+            Full name
+          </label>
+          <input id="fullName" name="fullName" type="text" placeholder="Jane Doe" required>
+          <label for="email">
+            Email address
+          </label>
+          <input id="email" name="email" type="email" placeholder="jane@example.com" required>
+          <label for="phone">
+            Phone number
+          </label>
+          <input id="phone" name="phone" type="tel" placeholder="0800 000 0000" required>
+          <label for="interest">
+            I am interested in
+          </label>
+          <select id="interest" name="interest" required>
+            <option value="">
+              Choose an option
+            </option>
+            <option value="new-car">
+              New car purchase
+            </option>
+            <option value="used-car">
+              Used car purchase
+            </option>
+          </select>
+          <label for="password">
+            Password
+          </label>
+          <input id="password" name="password" type="password" placeholder="Create a secure password" required minlength="8">
+          <button class="btn" type="submit">
+            Create account
+          </button>
+          <p class="form-note">
+            Already a member?
+            <a href="index.html">
+              Back to home
+            </a>
+          </p>
+          <div id="signupMessage" class="form-message" aria-live="polite">
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="text">
+          <h2>
+            Â© 2026 Havana Autos. All rights reserved.
+          </h2>
+        </div>
+        <div class="text">
+          <a href="signup.html">
+            Become a member
+          </a>
+          <span>
+            •
+          </span>
+          <a href="Admin.html">
+            Admin portal
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

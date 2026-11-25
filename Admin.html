@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      Admin Portal | Havana Autos
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer>
+    </script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <a class="header-logo" href="index.html" aria-label="Havana Autos home">
+          <img src="image/project_logo-removebg-preview.png" alt="Havana Autos logo">
+          <div class="header-text">
+            <h2>
+              Havana
+              <span>
+                Autos
+              </span>
+            </h2>
+            <h4>
+              Luxury &amp; Performance
+            </h4>
+          </div>
+        </a>
+        <nav class="header-links">
+          <a href="index.html#Home">
+            Home
+          </a>
+          <a href="index.html#Inventory">
+            Inventory
+          </a>
+          <a href="index.html#Services">
+            Services
+          </a>
+          <a href="index.html#Contact">
+            Contact
+          </a>
+        </nav>
+        <div class="login">
+          <a href="signup.html">
+            Sign up
+          </a>
+          <a href="signin.html">
+            Sign in
+          </a>
+        </div>
+        <button class="hamburger" type="button" aria-label="Toggle navigation">
+          <svg viewBox="0 0 32 32">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 8h22M5 16h22M5 24h22"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main class="admin-page">
+      <section class="section">
+        <div class="section-header">
+          <span class="eyebrow">
+            Admin access
+          </span>
+          <h2>
+            Manage inventory and view site activity
+          </h2>
+          <p>
+            Review current leads, track vehicle updates, and keep service operations moving smoothly.
+          </p>
+        </div>
+        <form id="adminLoginForm" class="form-card">
+          <label for="adminEmail">
+            Admin email
+          </label>
+          <input id="adminEmail" name="adminEmail" type="email" placeholder="admin@example.com" required>
+          <label for="adminPassword">
+            Password
+          </label>
+          <input id="adminPassword" name="adminPassword" type="password" placeholder="Enter admin password" required>
+          <button class="btn btn-primary" type="submit">
+            Log in
+          </button>
+          <div id="adminMessage" class="form-message" aria-live="polite">
+          </div>
+        </form>
+        <div id="adminDashboard" class="admin-dashboard hidden">
+          <div class="dashboard-header">
+            <h3>
+              Dashboard summary
+            </h3>
+            <button class="btn btn-secondary" type="button">
+              Log out
+            </button>
+          </div>
+          <div class="stats-grid">
+            <article class="dashboard-card">
+              <h4>
+                Active leads
+              </h4>
+              <p>
+                3
+              </p>
+            </article>
+            <article class="dashboard-card">
+              <h4>
+                Vehicles in stock
+              </h4>
+              <p>
+                3
+              </p>
+            </article>
+          </div>
+          <div class="inventory-table-wrap">
+            <h4>
+              Current vehicle inventory
+            </h4>
+            <table class="inventory-table">
+              <thead>
+                <tr>
+                  <th>
+                    Vehicle
+                  </th>
+                  <th>
+                    Status
+                  </th>
+                  <th>
+                    Price
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    Toyota Highlander
+                  </td>
+                  <td>
+                    Available
+                  </td>
+                  <td>
+                     ₦18,000,000
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Toyota Camry
+                  </td>
+                  <td>
+                    Available
+                  </td>
+                  <td>
+                     ₦9,000,000
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Toyota Corolla
+                  </td>
+                  <td>
+                    Available
+                  </td>
+                  <td>
+                     ₦6,000,000
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="text">
+          <h2>
+            © 2026 Havana Autos. All rights reserved.
+          </h2>
+        </div>
+        <div class="text">
+          <a href="signup.html">
+            Become a member
+          </a>
+
+          <a href="Admin.html">
+            Admin portal
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
